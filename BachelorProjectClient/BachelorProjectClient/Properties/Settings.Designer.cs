@@ -22,15 +22,5 @@ namespace BachelorProjectClient.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://localhost:44361/SoapService.asmx")]
-        public string BachelorProjectClient_SoapService_SoapService {
-            get {
-                return ((string)(this["BachelorProjectClient_SoapService_SoapService"]));
-            }
-        }
     }
 }
