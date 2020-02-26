@@ -19,14 +19,12 @@ namespace BachelorProjectClient
     {
         static void Main()
         {
-            for(int i = 0; i<10; i++)
+            for(int i = 1; i<=10; i++)
             {
-                TestCases.GraphQLTestCases.MySqlTestCases.testCase1(1, i, 3);
-                TestCases.GraphQLTestCases.MongoTestCases.testCase1(1, i, 3);
-                TestCases.RestTestCases.MongoTestCases.testCase1(1, i, 3);
-                TestCases.RestTestCases.MySqlTestCases.testCase1(1, i, 3);
-                TestCases.SoapTestCases.MongoTestCases.testCase1(1, i, 3);
-                TestCases.SoapTestCases.MySqlTestCases.testCase1(1, i, 3);
+                for(int j = 1; j<=100; j++)
+                {
+                    TestCases.ExecuteTestSuite.RunTestSuite1(i,j,1);
+                }
             }
         }
     }

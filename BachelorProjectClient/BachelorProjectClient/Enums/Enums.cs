@@ -24,7 +24,16 @@ namespace BachelorProjectClient.Enums
             TestCase7,
             TestCase8,
             TestCase9,
-            TestCase10
+            TestCase10,
+            TestCase11,
+            TestCase12,
+            TestCase13,
+            TestCase14,
+            TestCase15,
+            TestCase16,
+            TestCase17,
+            TestCase18
+
         }
         public enum API
         {
