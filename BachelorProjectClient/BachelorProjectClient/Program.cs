@@ -19,13 +19,32 @@ namespace BachelorProjectClient
     {
         static void Main()
         {
-            for(int i = 1; i<=10; i++)
-            {
-                for(int j = 1; j<=100; j++)
-                {
-                    TestCases.ExecuteTestSuite.RunTestSuite1(i,j,1);
-                }
-            }
+            TestCases.ExecuteTestSuite.RunTestSuite1(1, 1, 1);
+           // TestCases.ExecuteTestSuite.RunTestSuite2(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite3(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite4(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite5(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite6(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite7(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite8(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite9(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite10(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite11(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite12(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite13(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite14(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite15(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite16(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite17(1, 1, 1);
+            TestCases.ExecuteTestSuite.RunTestSuite18(1, 1, 1);
+            //TestCases.SoapTestCases.MongoTestCases.TestCase1(1, 2, 3);
+            //for(int i = 1; i<=10; i++)
+            //{
+            //    for(int j = 1; j<=100; j++)
+            //    {
+            //        TestCases.ExecuteTestSuite.RunTestSuite1(i,j,1);
+            //    }
+            //}
         }
     }
 }

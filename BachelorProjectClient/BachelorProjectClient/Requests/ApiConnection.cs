@@ -21,10 +21,8 @@ namespace BachelorProjectClient.Requests
 
 
 
-            LogDatabase.insertToLogDb(clientId, stopWatch.ElapsedMilliseconds,
-                request.ToString().Length,
+            LogDatabase.InsertToLogDb(clientId, stopWatch.ElapsedMilliseconds,
                 request.Content == null ? 0 : request.Content.Headers.ContentLength,
-                response.Headers.ToString().Length,
                 response.Content.Headers.ContentLength == null ? 0 : response.Content.Headers.ContentLength,
                 executionNO, iteration, db, testcase, api);
         }

@@ -18,7 +18,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase1();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase2.ToString(),
+                Enums.Enums.TestCases.TestCase1.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -27,7 +27,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase2();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase3.ToString(),
+                Enums.Enums.TestCases.TestCase2.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -36,7 +36,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase3();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase4.ToString(),
+                Enums.Enums.TestCases.TestCase3.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -45,7 +45,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase4();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase5.ToString(),
+                Enums.Enums.TestCases.TestCase4.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -54,7 +54,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase5();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase6.ToString(),
+                Enums.Enums.TestCases.TestCase5.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -63,7 +63,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase6();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase7.ToString(),
+                Enums.Enums.TestCases.TestCase6.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -72,7 +72,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase7();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase8.ToString(),
+                Enums.Enums.TestCases.TestCase7.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }
@@ -81,7 +81,7 @@ namespace BachelorProjectClient.TestCases.GraphQLTestCases
             HttpRequestMessage request = GraphQLMySqlRequests.CreateTestCase8();
             ApiConnection.RunTestcase(executionNO, iteration, clientId, request,
                 Enums.Enums.Databases.MySql.ToString(),
-                Enums.Enums.TestCases.TestCase9.ToString(),
+                Enums.Enums.TestCases.TestCase8.ToString(),
                 Enums.Enums.API.GRAPHQL.ToString());
 
         }

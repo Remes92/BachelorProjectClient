@@ -141,6 +141,7 @@
     <Compile Include="Requests\SoapRequests\SoapHttpRequest.cs" />
     <Compile Include="Requests\SoapRequests\SoapMongoRequests.cs" />
     <Compile Include="Requests\SoapRequests\SoapMySqlRequests.cs" />
+    <Compile Include="Requests\SoapRequests\SoapRequestBody.cs" />
     <Compile Include="TestCases\ExecuteTestSuite.cs" />
     <Compile Include="TestCases\GraphQLTestCases\MongoTestCases.cs" />
     <Compile Include="TestCases\GraphQLTestCases\MySqlTestCases.cs" />

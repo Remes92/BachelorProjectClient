@@ -15,7 +15,7 @@ namespace BachelorProjectClient.Requests.RestRequests
         }
         public static HttpRequestMessage CreateTestCase2()
         {
-            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase2.ToString());
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase2.ToString());// Lägg till parameterar som "+ /parameter value" i funktionen. 
         }
         public static HttpRequestMessage CreateTestCase3()
         {
@@ -48,6 +48,38 @@ namespace BachelorProjectClient.Requests.RestRequests
         public static HttpRequestMessage CreateTestCase10()
         {
             return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase10.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase11()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase11.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase12()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase12.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase13()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase13.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase14()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase14.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase15()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase15.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase16()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase16.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase17()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase17.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase18()
+        {
+            return RestHttpRequest.MongoRequest(Enums.Enums.TestCases.TestCase18.ToString());
         }
     }
 }

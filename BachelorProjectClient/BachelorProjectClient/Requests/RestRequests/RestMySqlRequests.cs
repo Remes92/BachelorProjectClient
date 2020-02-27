@@ -49,5 +49,37 @@ namespace BachelorProjectClient.Requests.RestRequests
         {
             return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase10.ToString());
         }
+        public static HttpRequestMessage CreateTestCase11()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase11.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase12()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase12.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase13()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase13.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase14()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase14.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase15()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase15.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase16()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase16.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase17()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase17.ToString());
+        }
+        public static HttpRequestMessage CreateTestCase18()
+        {
+            return RestHttpRequest.MySqlRequest(Enums.Enums.TestCases.TestCase18.ToString());
+        }
     }
 }
