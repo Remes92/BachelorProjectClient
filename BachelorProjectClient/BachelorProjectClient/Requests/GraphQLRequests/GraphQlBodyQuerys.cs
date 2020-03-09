@@ -281,7 +281,7 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             {
 
                 Query = "{" +
-                    "productAndType(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                    "productsAndTypes(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
                         "productId," +
                         "productTypeId," +
                         "companyId," +
@@ -321,7 +321,7 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             {
 
                 Query = "{" +
-                    "product(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                    "products(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
                         "productId," +
                         "productTypeId," +
                         "companyId," +
@@ -353,7 +353,7 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             {
 
                 Query = "{" +
-                    "productAndTypeAndCompany(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                    "productsAndTypesAndCompanys(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
                         "productId," +
                         "productTypeId," +
                         "companyId," +
@@ -403,49 +403,49 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
 
                 Query = "{" +
                         "productAndType(id:" + id + "){" +
-                            "ProductId, " +
-                            "ProductTypeId," +
-                            "CompanyId," +
-                            "ManagerId," +
-                            "AdministratorId," +
-                            "Product_Interval," +
-                            "AdjustedId," +
-                            "Product_Comment," +
-                            "Product_Country," +
-                            "Currency," +
-                            "Product_Type," +
-                            "Product_DescriptionString," +
-                            "Product_EndDate," +
-                            "Product_ExternalReference," +
-                            "Product_Price," +
-                            "Product_Interests," +
-                            "Product_Category," +
-                            "Product_CommissionPrice," +
-                            "Product_SupplierId," +
-                            "Product_Rating," +
-                            "Product_Key," +
-                            "Product_Max," +
-                            "Product_Name," +
-                            "Product_Price2," +
-                            "Product_Parameters," +
-                            "Product_NoticeLevel," +
-                            "Product_Premium," +
-                            "Product_Product," +
-                            "Product_Version," +
-                            "Product_Level," +
-                            "Product_ApprovedDate," +
-                            "ResellerId," +
-                            "Product_Retention," +
-                            "Product_Rule1," +
-                            "Product_Rule2," +
-                            "Product_Rule3," +
-                            "Product_Method," +
-                            "Product_StartDate," +
-                            "Product_Status," +
-                            "Product_StatusString," +
-                            "Product_PhoneNo," +
-                            "Product_URL," +
-                            "ProductType, " +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
                             "productTypeObject {" +
                                 "productTypeId," +
                                 "productType_DescriptionString," +
@@ -459,39 +459,311 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             };
             
         }
-        public static GraphQLQuery CreateGraphQLBodyTestCase14()
+        public static GraphQLQuery CreateGraphQLBodyTestCase14(int id)
         {
             return new GraphQLQuery
             {
-                Query = "{tests{name}}"
+                Query = "{" +
+                        "product(id:" + id + "){" +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
+                        "}" +
+                    "}"
             };
         }
-        public static GraphQLQuery CreateGraphQLBodyTestCase15()
+        public static GraphQLQuery CreateGraphQLBodyTestCase15(int id)
         {
             return new GraphQLQuery
             {
-                Query = "{tests{name}}"
+                Query = "{" +
+                        "productAndTypeAndCompany(id:" + id + "){" +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
+                            "productTypeObject {" +
+                                "productTypeId," +
+                                "productType_DescriptionString," +
+                                "productType_KeySellingPoint," +
+                                "productType_Label," +
+                                "productType_Name," +
+                                "productType_Status" +
+                            "}" +
+                             "companyObject {" +
+                                "companyId," +
+                                "company_Name," +
+                                "company_DirectionIn," +
+                                "company_DirectionOut," +
+                                "company_Phone," +
+                                "company_Label," +
+                                "company_Slogan" +
+                            "}" +
+                    "}" +
+                "}"
             };
         }
-        public static GraphQLQuery CreateGraphQLBodyTestCase16()
+        public static GraphQLQuery CreateGraphQLBodyTestCase16(int lowerLimit, int upperLimit)
         {
             return new GraphQLQuery
             {
-                Query = "{tests{name}}"
+                Query = "{" +
+                        "productsAndTypes(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
+                            "productTypeObject {" +
+                                "productTypeId," +
+                                "productType_DescriptionString," +
+                                "productType_KeySellingPoint," +
+                                "productType_Label," +
+                                "productType_Name," +
+                                "productType_Status" +
+                            "}" +
+                    "}" +
+                "}"
             };
         }
-        public static GraphQLQuery CreateGraphQLBodyTestCase17()
+        public static GraphQLQuery CreateGraphQLBodyTestCase17(int lowerLimit, int upperLimit)
         {
             return new GraphQLQuery
             {
-                Query = "{tests{name}}"
+                Query = "{" +
+                        "products(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
+                    "}" +
+                "}"
             };
         }
-        public static GraphQLQuery CreateGraphQLBodyTestCase18()
+        public static GraphQLQuery CreateGraphQLBodyTestCase18(int lowerLimit, int upperLimit)
         {
             return new GraphQLQuery
             {
-                Query = "{tests{name}}"
+                Query = "{" +
+                        "productsAndTypesAndCompanys(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                            "productId, " +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "administratorId," +
+                            "product_Interval," +
+                            "adjustedId," +
+                            "product_Comment," +
+                            "product_Country," +
+                            "currency," +
+                            "product_Type," +
+                            "product_DescriptionString," +
+                            "product_EndDate," +
+                            "product_ExternalReference," +
+                            "product_Price," +
+                            "product_Interests," +
+                            "product_Category," +
+                            "product_CommissionPrice," +
+                            "product_SupplierId," +
+                            "product_Rating," +
+                            "product_Key," +
+                            "product_Max," +
+                            "product_Name," +
+                            "product_Price2," +
+                            "product_Parameters," +
+                            "product_NoticeLevel," +
+                            "product_Premium," +
+                            "product_Product," +
+                            "product_Version," +
+                            "product_Level," +
+                            "product_ApprovedDate," +
+                            "resellerId," +
+                            "product_Retention," +
+                            "product_Rule1," +
+                            "product_Rule2," +
+                            "product_Rule3," +
+                            "product_Method," +
+                            "product_StartDate," +
+                            "product_Status," +
+                            "product_StatusString," +
+                            "product_PhoneNo," +
+                            "product_URL," +
+                            "productType, " +
+                            "productTypeObject {" +
+                                "productTypeId," +
+                                "productType_DescriptionString," +
+                                "productType_KeySellingPoint," +
+                                "productType_Label," +
+                                "productType_Name," +
+                                "productType_Status" +
+                            "}" +
+                             "companyObject {" +
+                                "companyId," +
+                                "company_Name," +
+                                "company_DirectionIn," +
+                                "company_DirectionOut," +
+                                "company_Phone," +
+                                "company_Label," +
+                                "company_Slogan" +
+                            "}" +
+                    "}" +
+                "}"
             };
         }
     }
