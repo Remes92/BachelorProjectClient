@@ -26,95 +26,121 @@ namespace BachelorProjectClient.Requests.SoapRequests
                 ));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase1(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase1(string targetedMethod,int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
-            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "num", 1));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase2(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase2(string targetedMethod,int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase3(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase3(string targetedMethod,int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase4(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase4(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase5(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase5(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase6(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase6(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase7(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase7(string targetedMethod, int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase8(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase8(string targetedMethod,int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase9(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase9(string targetedMethod, int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase10(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase10(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase11(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase11(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase12(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase12(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase13(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase13(string targetedMethod, int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase14(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase14(string targetedMethod, int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase15(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase15(string targetedMethod, int id)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "id", id));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase16(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase16(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase17(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase17(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
-        public static XDocument CreateSoapBodyTestCase18(string targetedMethod)
+        public static XDocument CreateSoapBodyTestCase18(string targetedMethod, int lower, int upper)
         {
             XDocument soapRequest = CreateSoapBody(targetedMethod);
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "lower", lower));
+            soapRequest.Root.Element(ns + "Body").Element(myns + targetedMethod).Add(new XElement(myns + "upper", upper));
             return soapRequest;
         }
 

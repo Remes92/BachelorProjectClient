@@ -10,8 +10,8 @@ namespace BachelorProjectClient.Requests
 {
     public class GraphQLHttpRequests
     {
-        private const string apiUrlMongo = "https://localhost:44377/api/graphqlmongo/";
-        private const string apiUrlSql = "https://localhost:44377/api/graphqlmysql/";
+        private const string apiUrlMongo = "http://192.168.128.63/api/graphqlmongo/";
+        private const string apiUrlSql = "http://192.168.128.63/api/graphqlmysql/";
         public static HttpRequestMessage MongoRequest()
         {
             var request = new HttpRequestMessage

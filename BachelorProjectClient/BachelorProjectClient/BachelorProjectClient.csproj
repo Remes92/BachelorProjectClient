@@ -150,6 +150,8 @@
     <Compile Include="TestCases\SoapTestCases\MongoTestCases.cs" />
     <Compile Include="TestCases\SoapTestCases\MySqlTestCases.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Database Template\logdb.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

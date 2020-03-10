@@ -53,7 +53,7 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             return new GraphQLQuery
             {
                 Query ="{" + 
-                        "productAndTypeAndCompany(id"+id+"){" +
+                        "productAndTypeAndCompany(id:"+id+"){" +
                         "    productId," +
                         "    productTypeId," +
                         "    companyId," +
@@ -110,14 +110,15 @@ namespace BachelorProjectClient.Requests.GraphQLRequests
             {
 
                 Query = "{" +
-                        "products(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
-                        "productId," +
-                        "productTypeId," +
-                        "companyId," +
-                        "managerId," +
-                        "adjustedId," +
-                        "product_Comment," +
-                "}"
+                            "products(lower:" + lowerLimit + ",upper:" + upperLimit + "){" +
+                            "productId," +
+                            "productTypeId," +
+                            "companyId," +
+                            "managerId," +
+                            "adjustedId," +
+                            "product_Comment" +
+                            "}"+
+                    "}"
             };
         }
         public static GraphQLQuery CreateGraphQLBodyTestCase6(int lowerLimit, int upperLimit)

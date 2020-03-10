@@ -9,8 +9,8 @@ namespace BachelorProjectClient.Requests
 {
     class RestHttpRequest
     {
-        private const string apiUrlMongo = "https://localhost:44377/api/restmongo/";
-        private const string apiUrlSql = "https://localhost:44377/api/restmysql/";
+        private const string apiUrlMongo = "http://192.168.128.63/api/restmongo/";
+        private const string apiUrlSql = "http://192.168.128.63/api/restmysql/";
         public static HttpRequestMessage MongoRequest(string testcase)
         {
             var request = new HttpRequestMessage
